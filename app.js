@@ -3,7 +3,7 @@ const multer = require("multer");
 const path = require("path");
 
 const server = express();
-const resize = require("./mainThread");
+const resize = require("./worker/mainThread");
 
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
